@@ -22,9 +22,7 @@ class Customer < Person
  def initialize(cid, cname, ccontactno, *clocation)
   super(cid,cname,ccontactno,*clocation)
  end
- def display
-   super
- end
+ 
 
 end
 
@@ -35,9 +33,7 @@ class Driver < Person
   super(did,dname,dcontactno,*dlocation)
   @car=car 
  end
- def display
-   super
- end
+
 end
 
 
