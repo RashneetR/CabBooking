@@ -1,15 +1,16 @@
 require './Person.rb'
 require './Customer.rb'
+require './Example.rb'
 require './Driver.rb'
 require './Car.rb'
 require './Booking.rb'
 require './System.rb'
-#require './Mod.rb'
+
 
 class Sample
   attr_accessor :flag
 
-  def initialize
+  def initializ
     @flag = 0
   end
 
