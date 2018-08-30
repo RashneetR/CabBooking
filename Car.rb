@@ -11,7 +11,5 @@ class Car
 
   def display_car_details
     puts "Car Id : #{@car_id} \nVehicle Number : #{@vehicle_no}\nColor : #{@color}"
-    puts '------------------------------------------------------------'
-    puts '------------------------------------------------------------'
   end
 end

@@ -1,4 +1,12 @@
+module Dist
+  def self.dist(x1, y1, x2, y2)
+    Math.sqrt((x2 - x1)**2 + (y2-y1)**2)
+  end
+end
+
 class Booking
+  include Dist
+
   attr_accessor :sx, :sy, :dx, :dy, :driver, :customer, :fare, :car_type, :hash1
 
   def books(micro, mini, prime, suv)
@@ -11,8 +19,8 @@ class Booking
     puts 'Enter destination co-ordinates'
     @dx = gets.chomp.to_i
     @dy = gets.chomp.to_i
-    @fare = Math.sqrt(((@dx - @sx)**2) + ((@dy - @sy)**2)) * (10 + @car_type).to_f
-
+    #@fare = Math.sqrt(((@dx - @sx)**2) + ((@dy - @sy)**2)) * (10 + @car_type).to_f
+    @fare = Dist.dist(@sx, @sy, @dx, @dy) * (10 + @car_type).to_f
     if @car_type == 1
       @hash1 = micro
     elsif @car_type == 2
@@ -29,7 +37,8 @@ class Booking
     min = 9999
     final = ''
     hash1.each do |item, _value|
-      s = Math.sqrt(((item[0].to_i - @sx)**2) + ((item[2].to_i - @sy)**2))
+      #s = Math.sqrt(((item[0].to_i - @sx)**2) + ((item[2].to_i - @sy)**2))
+      s = Dist.dist(@sx, @sy, item[0].to_i, item[2].to_i)
       if s < min
         min = s
         final = item
