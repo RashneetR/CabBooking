@@ -1,0 +1,210 @@
+sachin@rashneet:~$ cd /home/sachin/myapps/CabBooking
+sachin@rashneet:~/myapps/CabBooking$ ruby cb.rb
+ MAIN MENU : 
+1.Add new driver 
+2.Add new customer 
+3.Book Ride 
+4.Exit 
+Enter your choice : 
+1
+Enter the id
+1
+Enter the name
+d1
+Enter the contact number
+2345678
+Enter the location co-ordinates(x,y)
+2,3
+Enter the type of car(1.Micro 2.Mini 3.Prime 4.SUV)
+1
+Enter the registration number
+456789
+Enter the color
+red
+ MAIN MENU : 
+1.Add new driver 
+2.Add new customer 
+3.Book Ride 
+4.Exit 
+Enter your choice : 
+2
+Enter the id
+55
+Enter the name
+dfghj
+Enter the contact number
+45678
+Enter the location co-ordinates (x,y)
+5,6
+ MAIN MENU : 
+1.Add new driver 
+2.Add new customer 
+3.Book Ride 
+4.Exit 
+Enter your choice : 
+3
+
+Choose the type of car 
+1.Micro 2.Mini 3.Prime 4.SUV
+1
+Enter source co-ordinate
+20
+21
+Enter destination co-ordinates
+33
+34
+The fare is 202.23253941935258
+ The driver details are : 
+Name :
+d1
+Contact number
+2345678
+ MAIN MENU : 
+1.Add new driver 
+2.Add new customer 
+3.Book Ride 
+4.Exit 
+Enter your choice : 
+4
+sachin@rashneet:~/myapps/CabBooking$ 
+
+####################################################################
+
+sachin@rashneet:~$ cd /home/sachin/myapps/CabBooking
+sachin@rashneet:~/myapps/CabBooking$ ruby cb.rb
+ MAIN MENU : 
+1.Add new driver 
+2.Add new customer 
+3.Book Ride 
+4.Exit 
+Enter your choice : 
+1
+Enter the id
+1
+Enter the name
+d1
+Enter the contact number
+2345678
+Enter the location co-ordinates(x,y)
+2,3
+Enter the type of car(1.Micro 2.Mini 3.Prime 4.SUV)
+1
+Enter the registration number
+456789
+Enter the color
+red
+ MAIN MENU : 
+1.Add new driver 
+2.Add new customer 
+3.Book Ride 
+4.Exit 
+Enter your choice : 
+2
+Enter the id
+55
+Enter the name
+dfghj
+Enter the contact number
+45678
+Enter the location co-ordinates (x,y)
+5,6
+ MAIN MENU : 
+1.Add new driver 
+2.Add new customer 
+3.Book Ride 
+4.Exit 
+Enter your choice : 
+3
+
+Choose the type of car 
+1.Micro 2.Mini 3.Prime 4.SUV
+1
+Enter source co-ordinate
+20
+21
+Enter destination co-ordinates
+33
+34
+The fare is 202.23253941935258
+ The driver details are : 
+Name :
+d1
+Contact number
+2345678
+ MAIN MENU : 
+1.Add new driver 
+2.Add new customer 
+3.Book Ride 
+4.Exit 
+Enter your choice : 
+4
+sachin@rashneet:~/myapps/CabBooking$ ruby cb.rb
+ MAIN MENU : 
+1.Add new driver 
+2.Add new customer 
+3.Book Ride 
+4.Exit 
+Enter your choice : 
+1
+Enter the id
+22
+Enter the name
+dfghjk
+Enter the contact number
+456789
+Enter the location co-ordinates(x,y)
+4,5
+Enter the type of car(1.Micro 2.Mini 3.Prime 4.SUV)
+4
+Enter the registration number
+ertyu
+Enter the color
+red
+ MAIN MENU : 
+1.Add new driver 
+2.Add new customer 
+3.Book Ride 
+4.Exit 
+Enter your choice : 
+2
+Enter the id
+66
+Enter the name
+dfghjk
+Enter the contact number
+56789
+Enter the location co-ordinates (x,y)
+5,6
+ MAIN MENU : 
+1.Add new driver 
+2.Add new customer 
+3.Book Ride 
+4.Exit 
+Enter your choice : 
+3
+
+Choose the type of car 
+1.Micro 2.Mini 3.Prime 4.SUV
+4
+Enter source co-ordinate
+15
+20
+Enter destination co-ordinates
+1 
+2
+The fare is 319.24911902775864
+ The driver details are : 
+Name :
+dfghjk
+Contact number
+456789
+ MAIN MENU : 
+1.Add new driver 
+2.Add new customer 
+3.Book Ride 
+4.Exit 
+Enter your choice : 
+4
+sachin@rashneet:~/myapps/CabBooking$ 
+
+
