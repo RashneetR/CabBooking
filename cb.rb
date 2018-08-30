@@ -186,4 +186,6 @@ class Sample
   end
 end
 
+
+
 Sample.new.function1
