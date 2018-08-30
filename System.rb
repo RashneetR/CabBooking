@@ -75,18 +75,30 @@ class System
   end
 
   def book
-    b = Booking.new
-    *return_value = b.books(@@micro_driver, @@mini_driver, @@prime_driver, @@suv_driver)
-    @@booking[b.object_id] = b.driver
-
-    if return_value[0] == 1
-      @@micro_driver.delete(return_value[1])
-    elsif return_value[0] == 2
-      @@mini_driver.delete(return_value[1])
-    elsif return_value[0] == 2
-      @@prime_driver.delete(return_value[1])
-    elsif return_value[0] == 2
-      @@suv_driver.delete(return_value[1])
+    #cust = ""
+    puts "Enter the customer id"
+    customer_id = gets.chomp.to_i
+    flag = 0
+    @@free_customer.each do |elem|
+      if customer_id == elem.id
+        b = Booking.new(elem)
+        *return_value = b.books(@@micro_driver, @@mini_driver, @@prime_driver, @@suv_driver)
+        @@booking[b.object_id] = b.driver
+        flag = 1
+        if return_value[0] == 1
+          @@micro_driver.delete(return_value[1])
+        elsif return_value[0] == 2
+          @@mini_driver.delete(return_value[1])
+        elsif return_value[0] == 2
+          @@prime_driver.delete(return_value[1])
+        elsif return_value[0] == 2
+          @@suv_driver.delete(return_value[1])
+        end
+        break
+      end
+    end
+    if flag == 0 
+      puts "Customer ID is not registered"
     end
   end
 end
