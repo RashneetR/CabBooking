@@ -1,0 +1,30 @@
+class Sample
+  attr_accessor :flag
+
+  def initialize
+    @flag = 0
+  end
+
+  def function1
+    loop do
+      puts "\n\t\tMAIN MENU : \n
+            1.Add new driver (7 steps) \n
+            2.Add new customer (4 steps)\n
+            3.Book Ride \n
+            4.Exit \n
+            Enter your choice : "
+      flag = gets.chomp.to_i
+      break if flag < 1 || flag >= 4
+      s = System.new
+      if flag == 1
+        s.add_driver
+      elsif flag == 2
+        s.add_customer
+      elsif flag == 3
+        s.book
+      end
+    end
+  end
+end
+
+Sample.new.function1
